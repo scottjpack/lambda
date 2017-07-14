@@ -23,6 +23,9 @@ Required environment vars:
 - token
 - indexer (IE: splunk-hec.example.com)
 
+Set this lambda function to trigger on PutObject for the S3 bucket you want to monitor.
+Ensure the role the function executes as has permissions to read the bucket.
+
 It will the default port, (8088)
 Thanks AGAIN to George Starcher of Defense Point Security for use of his HEC class.
 """
